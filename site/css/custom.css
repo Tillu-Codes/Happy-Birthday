@@ -1,0 +1,79 @@
+/* Hero section (styled-jsx port from original) */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+.hero-display{font-family:Bricolage Grotesque,sans-serif}
+.hero-body{font-family:Work Sans,sans-serif}
+.hero-mono{font-family:JetBrains Mono,monospace}
+
+/* hero marquee thumbs (replica of Next/image-less originals) */
+.mq-thumb{
+  position:absolute;
+  top:0;
+  left:0;
+  height:3.5rem;
+  width:3.5rem;
+  overflow:hidden;
+  border:1px solid rgba(20,20,15,.15);
+  background:rgba(20,20,15,.05);
+  transition:transform .3s ease;
+  backface-visibility:hidden;
+  will-change:offset-distance;
+}
+.mq-thumb:hover{transform:scale(1.05)}
+.mq-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(100%);
+  transition:filter .3s ease;
+  -webkit-user-drag:none;
+  user-select:none;
+  pointer-events:none;
+}
+.mq-thumb:hover img{filter:grayscale(0)}
+
+/* page-flip book pages */
+.book-page{position:relative;overflow:hidden}
+.book-page.no-clip{overflow:visible}
+.book-page img.bk{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  pointer-events:none;
+  -webkit-user-drag:none;
+  user-select:none;
+  transform-origin:center;
+}
+/* polaroid drag cards (original: Q wrapper + default-export class list) */
+.pol-card{
+  position:absolute;
+  min-height:15rem;
+  width:13rem;
+  overflow:visible;
+  border-radius:.75rem;
+  background:#fff;
+  padding:1rem;
+  box-shadow:0 25px 50px -12px rgba(0,0,0,.25), 0 8px 16px -8px rgba(0,0,0,.2);
+  transform-style:preserve-3d;
+  cursor:grab;
+  touch-action:none;
+  user-select:none;
+  -webkit-user-select:none;
+  z-index:10;
+  will-change:transform;
+}
+.pol-card:hover{scale:1.03}
+.pol-card:active{cursor:grabbing}
+.pol-shine{
+  pointer-events:none;
+  position:absolute;
+  inset:0;
+  background:#fff;
+  user-select:none;
+  mix-blend-mode:overlay;
+  opacity:.2;
+}
+
+/* scrollRoot full height */
+#scrollRoot{position:relative;z-index:1}
