@@ -5,11 +5,11 @@
   if (!host) return;
 
   var notes = [
-    { id: 'n1', title: '01', text: "Every butterfly escapes... except me. I've been happily stuck with you since day one. \uD83E\uDD0D", accent: '#D98E7E' },
-    { id: 'n2', title: '02', text: 'Is butterfly ki tarah meri har khushi ka raasta bhi aakhir tum tak hi aakar rukta hai. \uD83E\uDD76', accent: '#C9A15E' },
-    { id: 'n3', title: '03', text: 'Tumne butterfly ko touch kiya... aur meri heartbeat phir se skip kar gayi. \uD83D\uDE2D\u2764\uFE0F', accent: '#7E9C68' },
-    { id: 'n4', title: '04', text: "Looks like you're really good at catching butterflies... no wonder you caught my heart so easily. \u2764\uFE0F", accent: '#B27A94' },
-    { id: 'n5', title: '05', text: 'This butterfly landed in your hands for a moment... my heart chose to stay there forever. \uD83E\uDD8B', accent: '#7C8FA6' }
+    { id: 'n1', title: '01', text: 'You\u2019re the plot twist I never knew I needed,\nThe sweetest friendship my heart ever received. \uD83C\uDF80', accent: '#D98E7E' },
+    { id: 'n2', title: '02', text: 'You\u2019re my favourite notification,\nAnd my sweetest little distraction.\uD83D\uDC97', accent: '#C9A15E' },
+    { id: 'n3', title: '03', text: 'If friendship had a pretty face,\nYou\u2019d be the definition of grace. \uD83C\uDF37', accent: '#7E9C68' },
+    { id: 'n4', title: '04', text: 'If cuteness had a name, it would be you.', accent: '#B27A94' },
+    { id: 'n5', title: '05', text: 'You walked in and stole the show,\nNow you\u2019re my favourite person to know. \uD83D\uDC8C', accent: '#7C8FA6' }
   ];
 
   function rnd(a, b) { return a + Math.random() * (b - a); }
@@ -177,7 +177,7 @@
       headRow.appendChild(t1); headRow.appendChild(t2);
       var p = document.createElement('p');
       p.textContent = note.text;
-      p.style.cssText = "font-family:'Newsreader', ui-serif, Georgia, serif;font-weight:400;font-size:1.2rem;line-height:1.6;color:#EDE6DA;margin:0;letter-spacing:0.005em";
+      p.style.cssText = "font-family:'Newsreader', ui-serif, Georgia, serif;font-weight:400;font-size:1.2rem;line-height:1.6;color:#EDE6DA;margin:0;letter-spacing:0.005em;white-space:pre-line";
       body.appendChild(headRow); body.appendChild(p);
       card.appendChild(body);
       var closeBtn = document.createElement('button');

@@ -9,17 +9,17 @@ import { CSS3DObject, CSS3DRenderer } from 'three/addons/renderers/CSS3DRenderer
   if (!section) return;
 
   var CARDS = [
-    { id: 1, title: 'Baddie', imageUrl: '/img/g3d/g1.jpg' },
+    { id: 1, title: 'Lovely', imageUrl: '/img/g3d/g1.jpg' },
     { id: 2, title: 'Angel', imageUrl: '/img/g3d/g2.jpg' },
-    { id: 3, title: 'Dreamgirl', imageUrl: '/img/g3d/g3.jpg' },
+    { id: 3, title: 'Peachy', imageUrl: '/img/g3d/g3.jpg' },
     { id: 4, title: 'Sweetheart', imageUrl: '/img/g3d/g4.jpg' },
     { id: 5, title: 'Icon', imageUrl: '/img/g3d/g5.jpg' },
     { id: 6, title: 'Stunner', imageUrl: '/img/g3d/g6.jpg' },
     { id: 7, title: 'Babe', imageUrl: '/img/g3d/g7.jpg' },
     { id: 8, title: 'Darling', imageUrl: '/img/g3d/g8.jpg' },
-    { id: 9, title: 'Sunshine', imageUrl: '/img/g3d/g9.jpg' },
-    { id: 10, title: 'Queen', imageUrl: '/img/g3d/g10.jpg' },
-    { id: 11, title: 'Heartbreaker', imageUrl: '/img/g3d/g11.jpg' }
+    { id: 9, title: 'Soulie', imageUrl: '/img/g3d/g9.jpg' },
+    { id: 10, title: 'Cupcake', imageUrl: '/img/g3d/g10.jpg' },
+    { id: 11, title: 'Amity', imageUrl: '/img/g3d/g11.jpg' }
   ];
 
   var TEAL = '#31b8c6';

@@ -6,13 +6,13 @@
 
   var captions = [
     'Cutie \uD83E\uDD79',
-    'Baddie \uD83D\uDC0E',
+    'Lovely \uD83D\uDC0E',
     'Pretty \u2728',
-    'My Love \uD83E\uDD0D',
-    'Sunshine \u2600\uFE0F',
+    'Pookie \uD83E\uDD0D',
+    'Soulie \u2600\uFE0F',
     'Beautiful \uD83C\uDF38',
-    'Dream Girl \uD83D\uDCAB',
-    'Queen \uD83D\uDC51'
+    'Peachy \uD83D\uDCAB',
+    'Sweetheart \uD83D\uDC51'
   ];
 
   var positions = [
